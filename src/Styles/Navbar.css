@@ -66,6 +66,50 @@
     background-color: #2642af;
   }
 
+  @media screen and (min-width: 280px) and (orientation:portrait){
+    .hamburger {
+      display: block;
+    }
+
+    .navigation {
+      position: fixed;
+      width: 279px;
+    }
+    .navigation-menu ul {
+      display: none;
+    }
+
+    .navigation-menu ul {
+        /*navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)*/
+        position: absolute;
+        top: 60px;
+        left: 0;
+        /* stacks the li tags vertically */
+        flex-direction: column;
+       /* makes menu span full height and width */
+        width: 100%;
+        height: calc(100vh - -1px);
+        background-color: black;
+        border-top: 1px solid white;
+      }
+      .navigation-menu li {
+        /* centers link text and strips off margin */
+        text-align: center;
+        margin: 0;
+      }
+      .navigation-menu li a {
+        color: white;
+        /* increases the surface area of the anchor tag to span the full width of the menu */
+        width: 100%;
+        padding: 1.5rem 0;
+      }
+      .navigation-menu li:hover {
+        border-bottom: 1px solid dodgerblue;
+        background: linear-gradient(black, #7c7c7c6b);
+        text-shadow: 0 0 0.235em currentColor;
+        transition: 0.3s ease-in-out;
+      }
+    }
   @media screen and (min-width: 360px) and (orientation:portrait){
     .hamburger {
       display: block;
@@ -109,13 +153,14 @@
         text-shadow: 0 0 0.235em currentColor;
         transition: 0.3s ease-in-out;
       }
-    }@media screen and (min-width: 360px) and (max-width: 740px) {
+    }
+    @media screen and (min-width: 360px) and (max-width: 740px) {
       .navigation-menu ul {
         /* previous styles */
         display: none;
       }
     }
-    @media screen and (min-width: 360px) and (max-width: 740px){
+    @media screen and (min-width: 280px) and (max-width: 740px){
       .navigation-menu.expanded ul {
         display: block;
       }
@@ -163,4 +208,33 @@
           text-shadow: 0 0 0.235em currentColor;
           transition: 0.3s ease-in-out;
         }
+    }
+
+    @media screen and (min-width: 1440px) and (orientation:landscape) {
+      .navigation {
+        height: 170px;
+        width: 100%;
+      }
+      .brand-name {
+        font-size: 4.3rem;
+        margin-left: 2rem;
+    }
+    .navigation-menu li {
+      font-size: 3rem;
+      padding: 0.5rem 1rem;
+    }
+    }
+    @media screen and (min-width: 1440px) and (orientation:portrait) {
+      .navigation {
+        height: 170px;
+        width: 100%;
+      }
+      .brand-name {
+        font-size: 4.3rem;
+        margin-left: 2rem;
+    }
+    .hamburger {
+      height: 90px;
+    width: 90px;
+    }
     }

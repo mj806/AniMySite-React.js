@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        Comix Craze
+        AniMySite
       </a>
       <button
         className="hamburger"
@@ -41,9 +41,27 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li style={{ textDecoration: "none", color: "white" }}>About</li>
-          <li style={{ textDecoration: "none", color: "white" }}>Contact</li>
-          <li style={{ textDecoration: "none", color: "white" }}>Manga</li>
+          <li>
+            <Link
+              to="/Anime"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Anime
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/Manga"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Manga
+            </Link>
+          </li>
+          <li>
+            <Link to="/*" style={{ textDecoration: "none", color: "white" }}>
+              About
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
