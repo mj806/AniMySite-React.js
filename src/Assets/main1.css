@@ -27,14 +27,6 @@ input:hover {
         width: 90%;
     }
 }
-@media  screen and (min-width: 360px) and (orientation:portrait) {
-    .search-box {
-        width: 100%;
-    }
-    input {
-        width: 90%;
-    }
-}
 @media  screen and (min-width: 768px) and (orientation:portrait) {
     .search-box {
         width: 100%;
