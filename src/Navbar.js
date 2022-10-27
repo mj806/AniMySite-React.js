@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        AniMySite
+        AniMySites
       </a>
       <button
         className="hamburger"
