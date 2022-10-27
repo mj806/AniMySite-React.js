@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../AnimePage/AnimeStyle.css";
+import "./Manga.css";
 
-function AnimeBanner() {
+function MangaBanner() {
   return (
     <motion.div
       initial={{ opacity: 0, scaleX: 0.5 }}
@@ -15,11 +15,11 @@ function AnimeBanner() {
         },
       }}
     >
-      <div className="ABbox">
-        <h1>ANIME</h1>
+      <div className="MBbox">
+        <h1>MANGA</h1>
       </div>
     </motion.div>
   );
 }
 
-export default AnimeBanner;
+export default MangaBanner;

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../AnimePage/AnimeStyle.css";
+import "./AnimeStyle.css";
 
 const MAX_ITEMS = 9;
 const MAX_LEFT = (MAX_ITEMS - 1) / 2;

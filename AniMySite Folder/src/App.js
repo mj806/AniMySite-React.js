@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./Navbar";
+import Navbar from "../../src/Navbar";
 import RoutingPages from "./RoutingPages";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
