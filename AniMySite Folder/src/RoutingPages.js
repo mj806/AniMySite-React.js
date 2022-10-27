@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../../src/Components/Pages/HomePage/Home";
 import Anime from "../../src/Components/Pages/AnimePage/Anime";
 import Manga from "../../src/Components/Pages/MangaPage/Manga";
-import Error from "./Error";
+import Error from "../../src/Error";
 import { AnimatePresence } from "framer-motion";
 
 const RoutingPages = ({ children }) => {
